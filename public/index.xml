@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Mathieu Bilodeau</title>
+		<link>http://localhost:1313/</link>
+		<description>Recent content on Mathieu Bilodeau</description>
+		<generator>Hugo</generator>
+		<language>fr</language>
+		
+		
+		
+		
+			<lastBuildDate>Mon, 14 Sep 2026 00:00:00 +0000</lastBuildDate>
+		
+			<atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Github Pages</title>
+				<link>http://localhost:1313/post/github-pages/</link>
+				<pubDate>Mon, 14 Sep 2026 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/post/github-pages/</guid>
+				<description>&lt;h1 id=&#34;un-brin-dhistoire&#34;&gt;Un brin d&amp;rsquo;histoire&lt;/h1&gt;&#xA;&lt;p&gt;Ça faisait longtemps que je pensais à m&amp;rsquo;enregistrer un nom de domaine pour avoir une adresse courriel personnalisée.  Je cherchais un nom facile à retenir, d&amp;rsquo;apparence professionnelle, et j&amp;rsquo;étais ouvert à l&amp;rsquo;idée d&amp;rsquo;utiliser un &lt;a href=&#34;https://fr.wikipedia.org/wiki/Domaine_de_premier_niveau&#34;&gt;TLD&lt;/a&gt; moins conventionnel que &lt;em&gt;.com&lt;/em&gt;. &lt;em&gt;.ca&lt;/em&gt;, etc. Comme j&amp;rsquo;ai un compte Google et qu&amp;rsquo;ils offrent le service de registraire, je suis aller voir ce qu&amp;rsquo;ils avaient à me suggérer. C&amp;rsquo;est comme ça que j&amp;rsquo;ai fait la connaisssance du &lt;a href=&#34;https://fr.wikipedia.org/wiki/Domaine_de_premier_niveau&#34;&gt;TLD&lt;/a&gt; en &lt;a href=&#34;https://get.dev/#benefits&#34;&gt;.dev&lt;/a&gt;.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Moi</title>
+				<link>http://localhost:1313/page/moi/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/page/moi/</guid>
+				<description>&lt;h3 id=&#34;bienvenue&#34;&gt;Bienvenue.&lt;/h3&gt;&#xA;&lt;h2 id=&#34;elevator-pitch&#34;&gt;Elevator pitch&lt;/h2&gt;&#xA;&lt;p&gt;J&amp;rsquo;ai toujours aimé chercher le « pourquoi du comment », comprendre comment un système peut être contourné et, surtout, comment l&amp;rsquo;améliorer pour le rendre résilient. Mon approche est axée sur l&amp;rsquo;analyse comportementale et le facteur humain, je cherche à comprendre le contexte et l&amp;rsquo;intention derrière l&amp;rsquo;action pour régler les problèmes à la source. La liberté de penser est l&amp;rsquo;une de mes valeurs fondamentales et je crois fermement que le savoir doit être librement partagé. C&amp;rsquo;est ce qui motive mon implication constante dans la communauté InfoSec&lt;/p&gt;</description>
+			</item>
+	</channel>
+</rss>

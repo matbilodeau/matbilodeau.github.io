@@ -1,0 +1,555 @@
+
+
+
+<!DOCTYPE html>
+<html lang="fr" itemscope itemtype="https://schema.org/WebPage">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><script>
+      (function() {
+        var saved = localStorage.getItem('theme');
+        if (saved === 'dark') {
+          document.documentElement.setAttribute('data-theme', 'dark');
+        } else if (saved === 'light') {
+          document.documentElement.setAttribute('data-theme', 'light');
+        } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+          document.documentElement.setAttribute('data-theme', 'dark');
+        }
+      })();
+    </script>
+
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+ 
+
+
+  
+  <title>Github Pages - Mathieu Bilodeau</title>
+
+  <meta name="description" content="Comment créer votre site github pages et le lier au domaine .dev">
+  <meta name="author" content="Mathieu Bilodeau"/>
+
+
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@id": "http://localhost:1313/#website",
+      "@type": "WebSite",
+      "name": "Mathieu Bilodeau",
+      "publisher": {
+        "@id": "http://localhost:1313/#organization"
+      },
+      "url": "http://localhost:1313/"
+    },
+    {
+      "@id": "http://localhost:1313/#organization",
+      "@type": "Organization",
+      "name": "Mathieu Bilodeau",
+      "url": "http://localhost:1313/"
+    },
+    {
+      "@id": "http://localhost:1313/post/github-pages/#breadcrumb",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "item": "http://localhost:1313/",
+          "name": "Accueil",
+          "position": 1
+        },
+        {
+          "@type": "ListItem",
+          "item": "http://localhost:1313/post/",
+          "name": "Posts",
+          "position": 2
+        },
+        {
+          "@type": "ListItem",
+          "item": "http://localhost:1313/post/github-pages/",
+          "name": "Github Pages",
+          "position": 3
+        }
+      ]
+    },
+    {
+      "@id": "http://localhost:1313/post/github-pages/#webpage",
+      "@type": "WebPage",
+      "breadcrumb": {
+        "@id": "http://localhost:1313/post/github-pages/#breadcrumb"
+      },
+      "isPartOf": {
+        "@id": "http://localhost:1313/#website"
+      },
+      "name": "Github Pages",
+      "url": "http://localhost:1313/post/github-pages/"
+    },
+    {
+      "@id": "http://localhost:1313/#author-mathieu-bilodeau",
+      "@type": "Person",
+      "name": "Mathieu Bilodeau",
+      "url": "https://matbilodeau.dev"
+    },
+    {
+      "@id": "http://localhost:1313/post/github-pages/#article",
+      "@type": "Article",
+      "author": [
+        {
+          "@id": "http://localhost:1313/#author-mathieu-bilodeau"
+        }
+      ],
+      "dateCreated": "2026-09-14T00:00:00+00:00",
+      "dateModified": "2026-09-14T00:00:00+00:00",
+      "datePublished": "2026-09-14T00:00:00+00:00",
+      "description": "Un brin d’histoire Ça faisait longtemps que je pensais à m’enregistrer un nom de domaine pour avoir une adresse courriel personnalisée. Je cherchais un nom facile à retenir, d’apparence professionnelle, et j’étais ouvert à l’idée d’utiliser un TLD moins conventionnel que .com. .ca, etc. Comme j’ai un compte Google et qu’ils offrent le service de registraire, je suis aller voir ce qu’ils avaient à me suggérer. C’est comme ça que j’ai fait la connaisssance du TLD en .dev.\n",
+      "headline": "Github Pages",
+      "image": "http://localhost:1313/img/avatar-icon.png",
+      "inLanguage": "fr",
+      "keywords": [],
+      "mainEntityOfPage": {
+        "@id": "http://localhost:1313/post/github-pages/#webpage"
+      },
+      "publisher": {
+        "@id": "http://localhost:1313/#organization"
+      },
+      "wordCount": 689
+    }
+  ]
+}
+</script>
+<meta property="og:url" content="http://localhost:1313/post/github-pages/">
+	<meta property="og:site_name" content="Mathieu Bilodeau">
+	<meta property="og:title" content="Github Pages">
+	<meta property="og:description" content="Un brin d’histoire Ça faisait longtemps que je pensais à m’enregistrer un nom de domaine pour avoir une adresse courriel personnalisée. Je cherchais un nom facile à retenir, d’apparence professionnelle, et j’étais ouvert à l’idée d’utiliser un TLD moins conventionnel que .com. .ca, etc. Comme j’ai un compte Google et qu’ils offrent le service de registraire, je suis aller voir ce qu’ils avaient à me suggérer. C’est comme ça que j’ai fait la connaisssance du TLD en .dev.">
+	<meta property="og:locale" content="fr">
+	<meta property="og:type" content="article">
+		<meta property="article:section" content="post">
+		<meta property="article:published_time" content="2026-09-14T00:00:00+00:00">
+		<meta property="article:modified_time" content="2026-09-14T00:00:00+00:00">
+<link rel="canonical" href="http://localhost:1313/post/github-pages/" />
+  <meta name="twitter:title" content="Github Pages" />
+  <meta name="twitter:description" content="Comment créer votre site github pages et le lier au domaine .dev">
+  <meta name="twitter:image" content="http://localhost:1313/img/avatar-icon.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link href='/img/favicon.ico' rel='icon' type='image/x-icon'/>
+<meta name="generator" content="Hugo 0.165.0">
+<link rel="alternate" href="/index.xml" type="application/rss+xml" title="Mathieu Bilodeau">
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.45/dist/katex.min.css" integrity="sha384-UA8juhPf75SzzAMA/4fo3yOU7sBJ0om7SCD2GHq0fZqZco6tr1UCV7nUbk9J90JM" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v7.2.0/css/all.css" integrity="sha384-EXatlQyrOJgDaM9/a74ArMzy7/2bTMSrZj8ID1IPeVmc3GncfCugefCFWSLj8JL/" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  
+<link rel="stylesheet" href="/css/beautifulhugo-a80ae261.77b67735997b779c4713b998c6f24fd96607584c9977dcf64c14455251b4b80b.css" integrity="sha256-d7Z3NZl7d5xHE7mYxvJP2WYHWEyZd9z2TBRFUlG0uAs=" crossorigin="anonymous" />
+  
+<link rel="stylesheet" media="print" href="/css/print.9ea1f3dd144aefb5611357af9799c2d7ffcc61e2aeec77d2770b857a9b85f3e7.css" integrity="sha256-nqHz3RRK77VhE1evl5nC1//MYeKu7HfSdwuFepuF8&#43;c=" crossorigin="anonymous" /><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400;1,700&family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap" /><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.11.1/build/styles/github.min.css" integrity="sha384-eFTL69TLRZTkNfYZOLM+G04821K1qZao/4QLJbet1pP4tcF+fdXq/9CdqAbWRl/L" crossorigin="anonymous"><link id="hljs-dark" rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.11.1/build/styles/github-dark.min.css" integrity="sha384-wH75j6z1lH97ZOpMOInqhgKzFkAInZPPSPlZpYKYTOqsaizPvhQZmAtLcPKXpLyH" crossorigin="anonymous" media="(prefers-color-scheme: dark)">
+  <script>
+    
+    (function() {
+      var saved = localStorage.getItem('theme');
+      var hljsDark = document.getElementById('hljs-dark');
+      if (hljsDark && (saved === 'dark' || saved === 'light')) {
+        hljsDark.media = (saved === 'dark') ? 'all' : 'not all';
+      }
+    })();
+  </script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photoswipe@5.4.4/dist/photoswipe.css" integrity="sha384-IfxC36XL/toUyJ939C73PcgMuRzAZuIzZxE38drsmO5p6jD7ei+Zx/1oA/0l8ysE" crossorigin="anonymous">
+
+
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-md navbar-light navbar-custom fixed-top">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/">Mathieu Bilodeau</a>
+    <div class="d-flex align-items-center">
+      
+      
+      
+      <button class="theme-toggle" id="toc-toggle" aria-controls="toc-panel" aria-expanded="false" aria-label="Table des matières" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Table des matières">
+        <span class="fas fa-list"></span>
+      </button>
+      
+      
+      
+      <button class="theme-toggle" id="theme-toggle" aria-label="Thème" data-bs-toggle="tooltip" data-bs-placement="bottom" data-tooltip-auto="Auto (suit le système)" data-tooltip-light="Mode clair" data-tooltip-dark="Mode sombre" title="Auto (suit le système)">
+        <span class="fas fa-circle-half-stroke" id="theme-icon-auto"></span>
+        <span class="fas fa-sun" id="theme-icon-light" style="display: none;"></span>
+        <span class="fas fa-moon" id="theme-icon-dark" style="display: none;"></span>
+      </button>
+      
+      
+      <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false" aria-label="Activer la navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+
+    <div class="collapse navbar-collapse" id="main-navbar">
+      <ul class="navbar-nav ms-auto">
+        
+          
+          
+            <li class="nav-item" >
+              <a class="nav-link" title="Blog" href="/">Blog</a>
+            </li>
+          
+        
+          
+          
+            <li class="nav-item" >
+              <a class="nav-link" title="À propos" href="/page/moi">À propos</a>
+            </li>
+          
+        
+          
+          
+            <li class="nav-item" >
+              <a class="nav-link" title="Labos" href="https://labocloud.matbilodeau.dev">Labos</a>
+            </li>
+          
+        
+
+          
+            
+            
+            
+            
+              
+                <li class="nav-item" >
+                  <a class="nav-link" href="http://localhost:1313/en/post/github-pages/">en</a>
+                </li>
+              
+            
+          
+        
+
+        
+      </ul>
+      
+
+    </div>
+
+    
+    
+      
+        <div class="avatar-container">
+          <div class="avatar-img-border">
+            <a title="Mathieu Bilodeau" href="/">
+              <img class="avatar-img" src="/img/avatar-icon.png" alt="Mathieu Bilodeau" />
+             
+            </a>
+          </div>
+        </div>
+      
+    
+
+  </div>
+</nav>
+
+
+
+
+
+
+
+
+    
+
+
+
+
+  
+
+  <header class="header-section ">
+    
+    
+    <div class="intro-header no-img">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-10 offset-md-1">
+            <div class="post-heading">
+              
+              <h1>Github Pages</h1>
+              
+              
+              
+
+  
+    <h2 class="post-subheading">Comment créer votre site github pages et le lier au domaine .dev</h2>
+  
+
+
+              
+                <span class="post-meta">
+  
+  
+  
+  
+     
+  
+  
+  
+    <i class="fas fa-calendar"></i>&nbsp;Publié le 2026-09-14
+    
+    
+  
+  
+    
+      &nbsp;|&nbsp;
+    
+    <i class="fas fa-clock"></i>&nbsp;4&nbsp;minutes
+    
+  
+  
+    
+      &nbsp;|&nbsp;
+    
+    <i class="fas fa-book"></i>&nbsp;689&nbsp;mots
+    
+  
+  
+    
+      &nbsp;|&nbsp;
+    <i class="fas fa-user"></i>&nbsp;<a href="https://matbilodeau.dev" class="text-reset">Mathieu Bilodeau</a>
+  
+  &nbsp;&bull;&nbsp;Traductions : <a href="http://localhost:1313/en/post/github-pages/" lang="en">en</a>
+</span>
+
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    
+
+  </header>
+
+
+    
+  <div class="container" role="main">
+    <div class="row">
+      <div class="col-md-10 offset-md-1">
+        <article role="main" class="blog-post">
+          
+
+
+          
+
+          <h1 id="un-brin-dhistoire">Un brin d&rsquo;histoire</h1>
+<p>Ça faisait longtemps que je pensais à m&rsquo;enregistrer un nom de domaine pour avoir une adresse courriel personnalisée.  Je cherchais un nom facile à retenir, d&rsquo;apparence professionnelle, et j&rsquo;étais ouvert à l&rsquo;idée d&rsquo;utiliser un <a href="https://fr.wikipedia.org/wiki/Domaine_de_premier_niveau">TLD</a> moins conventionnel que <em>.com</em>. <em>.ca</em>, etc. Comme j&rsquo;ai un compte Google et qu&rsquo;ils offrent le service de registraire, je suis aller voir ce qu&rsquo;ils avaient à me suggérer. C&rsquo;est comme ça que j&rsquo;ai fait la connaisssance du <a href="https://fr.wikipedia.org/wiki/Domaine_de_premier_niveau">TLD</a> en <a href="https://get.dev/#benefits">.dev</a>.</p>
+<p><img src="/img/Gdomain.png" alt="Du bon marketing"></p>
+<p>Marketing efficace, j&rsquo;ai cliqué sur le bouton. Apparement il faudra un certificat SSL si on veut publier un site web; pas grave c&rsquo;est un beau nom, le prix est abordable et en plus je n&rsquo;aurai pas le choix de configurer HTTPS quand je voudrai un site (ce qui force aussi les visiteurs à utiliser le protocole sécurisé), donc je le veux et il est à moi.</p>
+<p>Dans un cours passé, le site du cours était hébergé sur Github; en fait, il était généré automatiquement à partir de fichiers <em>.md</em> contenus quelque part dans le repo. <a href="https://pages.github.com">Github Pages</a> serait une option intéressante quand je voudrais avoir un petit site web pour présenter mes repo.</p>
+<p>En présentant Github lors d&rsquo;une démonstration dans le cours d&rsquo;infonuagique, j&rsquo;expliquais que ça peut servir de vitrine sur ses compétences lors d&rsquo;une recherche d&rsquo;emploi en ajoutant le lien sur notre CV et on me lance: &ldquo;Mais pourquoi ton CV est pas sur Github?&rdquo;</p>
+<p><img src="/img/challengeAccepted.jpg" alt="Challenge Accpeted"></p>
+<h1 id="comment-faire">Comment faire</h1>
+<h2 id="pour-pas-se-casser-la-tête-pendant-2-jours-avec-google-domains">pour pas se casser la tête pendant 2 jours avec Google Domains</h2>
+<p>Si vous utilisez un naviguateur modifié avec des extensions pour rendre votre expérience web plus pure, il se peut que les fonctionnalités de Google Domains semblent brisées. Les symptômes vécus de mon côté :</p>
+<ul>
+<li>DNS A Record qui ne prend qu&rsquo;une seule ligne, même après avoir utilisé le bouton &ldquo;+&rdquo;; même après avoir fait &ldquo;edit&rdquo; et le &ldquo;+&rdquo;; même après avoir supprimé / ajouté l&rsquo;enregistrement après la fin du TTL.</li>
+<li>CNAME qui reviens à mondomaine.dev au lieu de user.github.io même après avoir supprimé / ajouté l&rsquo;enregistrement après la fin du TTL.</li>
+</ul>
+<h3 id="utilisez-le-mode-incognito--navigation-privée"><strong>Utilisez le mode incognito / navigation privée</strong></h3>
+<p>Je sais que ça ne fait pas vraiment de sens, mais ça a fonctionné pour moi.</p>
+<h1 id="marche-à-suivre">Marche à suivre</h1>
+<p>Assurez-vous d&rsquo;avoir:</p>
+<ul>
+<li>un compte GitHub</li>
+<li>un domaine
+<ul>
+<li>si votre domaine n&rsquo;est pas &ldquo;sécurisé&rdquo;, vous pouvez quand même suivre ces instructions.</li>
+</ul>
+</li>
+</ul>
+<p>Les instructions pour <a href="https://pages.github.com">Github Pages</a> indiquent de créer un repo sous la forme <code>user.github.io</code> mais vous pouvez activer <a href="https://pages.github.com">Github Pages</a> dans n&rsquo;importe quel repo via les &ldquo;Settings&rdquo;. Il est important de noter que GitHub ne peut associer qu&rsquo;un seul domaine ou sous-domaine par repo, par exemple en associant <a href="https://www.domaine.xxx">www.domaine.xxx</a> et domaine.xxx au site web. Il existe des moyens inélégants de contourner ce problème mais il n&rsquo;en sera pas question ici.  Choisissez comment <em>vous</em> voulez accéder au site. Personnellement j&rsquo;ai choisi d&rsquo;accéder via le domaine <em>Apex</em> et d&rsquo;utiliser les sous-domaines pour des repo spécifiques, par exemple <a href="https://aucun-probleme.matbilodeau.dev/">ce repo</a>.</p>
+<p>Pour associer un domaine <em>Apex</em>, il faut simplement créer un <em>A RECORD</em> sur Google Domains avec les adresses IP listées <a href="https://docs.github.com/en/free-pro-team@latest/github/working-with-github-pages/managing-a-custom-domain-for-your-github-pages-site#configuring-an-apex-domain">ici</a>
+Pour associer un sous-domaine, il faut créer un fichier <a href="https://docs.github.com/en/free-pro-team@latest/github/working-with-github-pages/managing-a-custom-domain-for-your-github-pages-site#configuring-a-subdomain">CNAME</a> (étapes 1 2 3 avec le nom complet <em>sous.domaine.xxx</em>) puis sur Google Domains ajouter un enregistrement CNAME <em>sous</em> qui pointe vers <code>user.github.io</code>.</p>
+<p><img src="/img/GoogleDomainsDNS.png" alt="GoogleDNS"></p>
+<p>Une fois le travail complété sur Google Domains, retourner à votre repo dans &ldquo;Settings&rdquo; et <em>attendez patiemment</em> que la boite à cocher pour &ldquo;Enforce HTTPS&rdquo; ne présente plus de message d&rsquo;erreur. La propagation de l&rsquo;information DNS peut prendre du temps, parfois quelques minutes mais ça peut aller jusqu&rsquo;à quelques heures.  <a href="https://pages.github.com">Github Pages</a> génère automatiquement des certificats gratuits <em>Let&rsquo;s Encrypt</em> pour vous, sans autre effort de votre part. Si vous êtes attentifs, vous verrez possiblement une barre de progrès lors de la génération du certificat. Lorsque tout sera en règle, vous devriez voir &ldquo;Your site is now published at https://&hellip;.&rdquo;</p>
+<h1 id="sécurité">Sécurité</h1>
+<p>Le principal avantage du domaine <code>.dev</code>, à part le look particulier qu&rsquo;il vous offre, est la mise en place du <a href="https://fr.wikipedia.org/wiki/HTTP_Strict_Transport_Security">HSTS</a> avec le mécanisme de pré-chargement ce qui assure que les connexions au site seront toujours sécurisées. Si vous avez un autre suffixe de domaine vous pouvez activer HSTS en suivant les instructions <a href="https://hstspreload.org/">ici</a>.</p>
+
+          
+          
+
+
+        
+        
+
+        
+
+        
+      </article>
+
+      
+        
+        
+        <ul class="post-pager blog-post-pager">
+          
+            <li class="pager-prev"></li>
+          
+          <li class="pager-center">
+            
+
+          </li>
+          
+            <li class="pager-next"></li>
+          
+        </ul>
+      
+
+
+      
+
+      <div class="offcanvas offcanvas-start toc-panel" id="toc-panel" tabindex="-1" aria-labelledby="toc-title" data-toc-mode="headings">
+  <div class="offcanvas-header">
+    <span class="offcanvas-title toc-title" id="toc-title">Table des matières</span>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Fermer la table des matières"></button>
+  </div>
+  <nav class="offcanvas-body toc-body"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#pour-pas-se-casser-la-tête-pendant-2-jours-avec-google-domains">pour pas se casser la tête pendant 2 jours avec Google Domains</a>
+      <ul>
+        <li><a href="#utilisez-le-mode-incognito--navigation-privée"><strong>Utilisez le mode incognito / navigation privée</strong></a></li>
+      </ul>
+    </li>
+  </ul>
+</nav></nav>
+</div>
+
+    </div>
+  </div>
+</div>
+
+    
+      
+<footer>
+  <div class="container">
+    
+    <div class="row">
+      <div class="col-md-10 offset-md-1">
+        <ul class="list-inline text-center footer-links">
+          
+          
+          
+              <li class="list-inline-item" ><a rel="noopener noreferrer" href="https://github.com/matbilodeau" title="GitHub" aria-label="GitHub">
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-github fa-stack-1x fa-inverse" aria-hidden="true"></i>
+                  </span>
+                </a>
+              </li>
+          
+          
+          
+          
+          
+          
+          
+              <li class="list-inline-item" ><a rel="noopener noreferrer" href="https://linkedin.com/in/uaedolibueihtam" title="LinkedIn" aria-label="LinkedIn">
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-linkedin fa-stack-1x fa-inverse" aria-hidden="true"></i>
+                  </span>
+                </a>
+              </li>
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+              <li class="list-inline-item" ><a rel="noopener noreferrer" href="https://keybase.io/matbilodeau" title="Keybase" aria-label="Keybase">
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-keybase fa-stack-1x fa-inverse" aria-hidden="true"></i>
+                  </span>
+                </a>
+              </li>
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+        </ul>
+        <p class="credits copyright text-muted">
+          
+            
+              <a href="https://matbilodeau.dev">Mathieu Bilodeau</a>
+            
+            &nbsp;&bull;&nbsp;
+          
+          &copy;
+          
+            2026
+          
+
+          
+            &nbsp;&bull;&nbsp;
+          
+          
+            <a href="/">Mathieu Bilodeau</a>
+          
+        </p>
+        
+        <p class="credits theme-by text-muted">
+          Carbure avec <a href="https://gohugo.io">Hugo v0.165.0</a>&nbsp;&bull;&nbsp; Avec le Theme <a href="https://github.com/halogenica/beautifulhugo">Beautiful Hugo</a> adapté de <a href="https://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a>
+          
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+      
+
+      
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.45/dist/katex.min.js" integrity="sha384-Tt7wBxLKwSzFVRET4O4U9H6v8MNaQ/CjN2FMP4xFm0ErrFu6aNqoonRVW5W40iGI" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.45/dist/contrib/auto-render.min.js" integrity="sha384-bjyGPfbij8/NDKJhSGZNP/khQVgtHUE5exjm4Ydllo42FwIgYsdLO2lXGmRBf5Mz" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script><script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.11.1/build/highlight.min.js" integrity="sha384-RH2xi4eIQ/gjtbs9fUXM68sLSi99C7ZWBRX1vDrVv6GQXRibxXLbwO2NGZB74MbU" crossorigin="anonymous"></script><script> hljs.highlightAll(); </script>
+<script> document.querySelectorAll('pre.chroma').forEach(function (pre) { pre.style.padding = '0'; }); </script><script src="https://cdn.jsdelivr.net/npm/photoswipe@5.4.4/dist/umd/photoswipe.umd.min.js" integrity="sha384-k8EKyYcONphQ7zH4cQ0888JapXwrLTXQl/Ue1/jYgjVYahln1NWpnt2S4IC56LNh" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/photoswipe@5.4.4/dist/umd/photoswipe-lightbox.umd.min.js" integrity="sha384-IiBVbUz6+U+Tbm/ijO2P0XRwcVzNfrMzloNLkrqHkbi6w5H0v6ie4fI9BIO4SwdK" crossorigin="anonymous"></script>
+
+<script src="/js/beautifulhugo-10976a71.16a11e0227d27802b0833da1513d1994b61bcaec934ba3fdb56619f14cc05302.js" integrity="sha256-FqEeAifSeAKwgz2hUT0ZlLYbyuyTS6P9tWYZ8UzAUwI=" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+
+
+
+
+    
+  </body>
+</html>

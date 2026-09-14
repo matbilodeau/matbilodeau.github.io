@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Posts on Mathieu Bilodeau</title>
+		<link>http://localhost:1313/post/</link>
+		<description>Recent content in Posts on Mathieu Bilodeau</description>
+		<generator>Hugo</generator>
+		<language>fr</language>
+		
+		
+		
+		
+			<atom:link href="http://localhost:1313/post/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Github Pages</title>
+				<link>http://localhost:1313/post/2020-10-05-github-pages/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/post/2020-10-05-github-pages/</guid>
+				<description>&lt;h1 id=&#34;un-brin-dhistoire&#34;&gt;Un brin d&amp;rsquo;histoire&lt;/h1&gt;&#xA;&lt;p&gt;Ça faisait longtemps que je pensais à m&amp;rsquo;enregistrer un nom de domaine pour avoir une adresse courriel personnalisée.  Je cherchais un nom facile à retenir, d&amp;rsquo;apparence professionnelle, et j&amp;rsquo;étais ouvert à l&amp;rsquo;idée d&amp;rsquo;utiliser un &lt;a href=&#34;https://fr.wikipedia.org/wiki/Domaine_de_premier_niveau&#34;&gt;TLD&lt;/a&gt; moins conventionnel que &lt;em&gt;.com&lt;/em&gt;. &lt;em&gt;.ca&lt;/em&gt;, etc. Comme j&amp;rsquo;ai un compte Google et qu&amp;rsquo;ils offrent le service de registraire, je suis aller voir ce qu&amp;rsquo;ils avaient à me suggérer. C&amp;rsquo;est comme ça que j&amp;rsquo;ai fait la connaisssance du &lt;a href=&#34;https://fr.wikipedia.org/wiki/Domaine_de_premier_niveau&#34;&gt;TLD&lt;/a&gt; en &lt;a href=&#34;https://get.dev/#benefits&#34;&gt;.dev&lt;/a&gt;.&lt;/p&gt;</description>
+			</item>
+	</channel>
+</rss>

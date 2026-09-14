@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Posts on Mathieu Bilodeau</title>
+		<link>http://localhost:1313/en/post/</link>
+		<description>Recent content in Posts on Mathieu Bilodeau</description>
+		<generator>Hugo</generator>
+		<language>en</language>
+		
+		
+		
+		
+			<atom:link href="http://localhost:1313/en/post/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Free website on Github Pages</title>
+				<link>http://localhost:1313/en/post/2020-10-05-github-pages/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/en/post/2020-10-05-github-pages/</guid>
+				<description>&lt;h1 id=&#34;the-story-part&#34;&gt;The story part&lt;/h1&gt;&#xA;&lt;p&gt;I had been thinking about registering a domain for a custom email address. I was looking for an easy to remember name that would look professionnal without necessarily going for a common &lt;a href=&#34;https://en.wikipedia.org/wiki/Top-level_domain&#34;&gt;TLD&lt;/a&gt; such as &lt;em&gt;.com&lt;/em&gt;. &lt;em&gt;.ca&lt;/em&gt;, etc. Having a Google account and knowing they offer a registrar service, I had a look.  That&amp;rsquo;s how I came across the &lt;a href=&#34;https://get.dev/#benefits&#34;&gt;.dev&lt;/a&gt; &lt;a href=&#34;https://en.wikipedia.org/wiki/Top-level_domain&#34;&gt;TLD&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/img/Gdomain.png&#34; alt=&#34;Good marketing here&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Marketing dept&amp;rsquo;s doing its job well so I clicked that attractive button.  If you want to serve a website through this domain, you&amp;rsquo;ll need an SSL certificate.  No worries there, plus it&amp;rsquo;s a cool name, it&amp;rsquo;s affordable and it will require that I setup HTTPS when I&amp;rsquo;m ready for a website (and also requires visitors to use a secure protocol).&lt;/p&gt;</description>
+			</item>
+	</channel>
+</rss>

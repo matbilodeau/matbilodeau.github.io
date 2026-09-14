@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Pages on Mathieu Bilodeau</title>
+		<link>http://localhost:1313/page/</link>
+		<description>Recent content in Pages on Mathieu Bilodeau</description>
+		<generator>Hugo</generator>
+		<language>fr</language>
+		
+		
+		
+		
+			<atom:link href="http://localhost:1313/page/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Moi</title>
+				<link>http://localhost:1313/page/moi/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/page/moi/</guid>
+				<description>&lt;h3 id=&#34;bienvenue&#34;&gt;Bienvenue.&lt;/h3&gt;&#xA;&lt;h2 id=&#34;elevator-pitch&#34;&gt;Elevator pitch&lt;/h2&gt;&#xA;&lt;p&gt;J&amp;rsquo;ai toujours aimé chercher le « pourquoi du comment », comprendre comment un système peut être contourné et, surtout, comment l&amp;rsquo;améliorer pour le rendre résilient. Mon approche est axée sur l&amp;rsquo;analyse comportementale et le facteur humain, je cherche à comprendre le contexte et l&amp;rsquo;intention derrière l&amp;rsquo;action pour régler les problèmes à la source. La liberté de penser est l&amp;rsquo;une de mes valeurs fondamentales et je crois fermement que le savoir doit être librement partagé. C&amp;rsquo;est ce qui motive mon implication constante dans la communauté InfoSec&lt;/p&gt;</description>
+			</item>
+	</channel>
+</rss>

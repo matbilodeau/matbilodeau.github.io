@@ -1,0 +1,228 @@
+baseURL = "https://matbilodeau.dev"
+DefaultContentLanguage = "fr"
+#DefaultContentLanguage = "fr"
+title = "Mathieu Bilodeau"
+theme = "beautifulhugo"
+metaDataFormat = "yaml"
+pygmentsStyle = "trac"
+pygmentsUseClasses = true
+pygmentsCodeFences = true
+pygmentsCodefencesGuessSyntax = true
+#pygmentsUseClassic = true
+#pygmentOptions = "linenos=inline"
+#disqusShortname = "XXX"
+#googleAnalytics = "XXX"
+
+[languages.fr]
+  #baseURL = "https://matbilodeau.dev"
+  #DefaultContentLanguage = "en"
+  #DefaultContentLanguage = "fr"
+  title = "Mathieu Bilodeau"
+  theme = "beautifulhugo"
+  contentDir = "content/fr"
+  metaDataFormat = "yaml"
+  pygmentsStyle = "trac"
+  pygmentsUseClasses = true
+  pygmentsCodeFences = true
+  pygmentsCodefencesGuessSyntax = true
+  #pygmentsUseClassic = true
+  #pygmentOptions = "linenos=inline"
+  #disqusShortname = "XXX"
+  googleAnalytics = "UA-179709848-1"
+  weight = 2
+
+  [languages.fr.Params]
+    #  homeTitle = "Beautiful Hugo Theme" # Set a different text for the header on the home page
+    subtitle = "Mon site personnel"
+    mainSections = ["post","posts"]
+    logo = "img/avatar-icon.png" # Expecting square dimensions
+    favicon = "img/favicon.ico"
+    dateFormat = "2006-01-02"
+    commit = false
+    rss = false
+    comments = false
+    readingTime = true
+    wordCount = true
+    useHLJS = true
+    socialShare = false
+    delayDisqus = false
+    showRelatedPosts = false
+    #  hideAuthor = true
+    #  gcse = "012345678901234567890:abcdefghijk" # Get your code from google.com/cse. Make sure to go to "Look and Feel" and change Layout to "Full Width" and Theme to "Classic"
+
+    #[[Params.bigimg]]
+    #  src = "img/triangle.jpg"
+    #  desc = "Triangle"
+    #[[Params.bigimg]]
+    #  src = "img/sphere.jpg"
+    #  desc = "Sphere"
+    #  # position: see values of CSS background-position.
+    #  position = "center top"
+    #[[Params.bigimg]]
+    #  src = "img/hexagon.jpg"
+    #  desc = "Hexagon"
+
+
+[languages.en]
+  #baseURL = "https://matbilodeau.dev"
+  #DefaultContentLanguage = "en"
+  #DefaultContentLanguage = "fr"
+  title = "Mathieu Bilodeau"
+  theme = "beautifulhugo"
+  contentDir = "content/en"
+  metaDataFormat = "yaml"
+  pygmentsStyle = "trac"
+  pygmentsUseClasses = true
+  pygmentsCodeFences = true
+  pygmentsCodefencesGuessSyntax = true
+  #pygmentsUseClassic = true
+  #pygmentOptions = "linenos=inline"
+  #disqusShortname = "XXX"
+  googleAnalytics = "UA-179709848-1"
+  weight = 2
+
+  [languages.en.Params]
+    #  homeTitle = "Beautiful Hugo Theme" # Set a different text for the header on the home page
+    subtitle = "My personnal site"
+    mainSections = ["post","posts"]
+    logo = "img/avatar-icon.png" # Expecting square dimensions
+    favicon = "img/favicon.ico"
+    dateFormat = "2006-01-02"
+    commit = false
+    rss = false
+    comments = false
+    readingTime = true
+    wordCount = true
+    useHLJS = true
+    socialShare = false
+    delayDisqus = false
+    showRelatedPosts = false
+    #  hideAuthor = true
+    #  gcse = "012345678901234567890:abcdefghijk" # Get your code from google.com/cse. Make sure to go to "Look and Feel" and change Layout to "Full Width" and Theme to "Classic"
+
+    #[[Params.bigimg]]
+    #  src = "img/triangle.jpg"
+    #  desc = "Triangle"
+    #[[Params.bigimg]]
+    #  src = "img/sphere.jpg"
+    #  desc = "Sphere"
+    #  # position: see values of CSS background-position.
+    #  position = "center top"
+    #[[Params.bigimg]]
+    #  src = "img/hexagon.jpg"
+    #  desc = "Hexagon"
+
+
+
+
+
+
+
+#[permalinks]
+#  post = "/post/:year/:month/:title/"
+
+
+
+[params.author]
+  name = "Mathieu Bilodeau"
+  website = "https://matbilodeau.dev"
+  #email = ""
+#  facebook = "username"
+  github = "matbilodeau"
+#  gitlab = "username"
+#  bitbucket = "username"
+#  twitter = "username"
+#  reddit = "username"
+  linkedin = "https://linkedin.com/in/uaedolibueihtam"
+#  xing = "username"
+#  stackoverflow = "users/XXXXXXX/username"
+#  snapchat = "username"
+#  instagram = "username"
+#  youtube = "user/username" # or channel/channelname
+#  soundcloud = "username"
+#  spotify = "username"
+#  bandcamp = "username"
+#  itchio = "username"
+#  vk = "username"
+#  paypal = "username"
+#  telegram = "username"
+#  500px = "username"
+#  codepen = "username"
+#  mastodon = ""
+#  kaggle = "username"
+#  weibo = "username"
+#  slack = "username"
+  keybase = "matbilodeau"
+
+[[languages.fr.menu.main]]
+  name = "Blog"
+  url = ""
+  weight = 1
+
+[[languages.fr.menu.main]]
+  name = "À propos"
+  url = "/page/moi"
+  weight = 2
+
+#[[languages.fr.menu.main]]
+#  name = "Tags"
+#  url = "tags"
+# weight = 3
+
+[[languages.fr.menu.main]]
+  name = "Labos"
+  url = "https://labocloud.matbilodeau.dev"
+  weight = 4
+
+[[languages.en.menu.main]]
+  name = "Blog"
+  url = ""
+  weight = 1
+
+[[languages.en.menu.main]]
+   name = "About"
+   url = "/page/me"
+   weight = 2
+
+#[[languages.en.menu.main]]
+#  name = "Tags"
+#  url = "tags"
+#  weight = 3
+
+
+#[[menu.main]]
+#    name = "Blog"
+#    weight = 1
+
+#[[menu.main]]
+#    name = "About"
+#    url = "page/about/"
+#    weight = 3
+
+#[[menu.main]]
+#    identifier = "samples"
+#    name = "Samples"
+#    weight = 2
+
+#[[menu.main]]
+#    parent = "samples"
+#    name = "Big Image Sample"
+#    url = "post/2017-03-07-bigimg-sample"
+#    weight = 1
+
+#[[menu.main]]
+#    parent = "samples"
+#    name = "Math Sample"
+#    url = "post/2017-03-05-math-sample"
+#    weight = 2
+
+#[[menu.main]]
+#    parent = "samples"
+#    name = "Code Sample"
+#    url = "post/2016-03-08-code-sample"
+#    weight = 3
+
+#[[menu.main]]
+#    name = "Tags"
+#    url = "tags"
+#    weight = 3
